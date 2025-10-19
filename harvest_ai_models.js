@@ -4,6 +4,7 @@
  * Saves results locally and injects them into OpenWebUI's knowledge uploads folder.
  */
 
+import 'dotenv/config';
 import fs from "fs";
 import path from "path";
 import { execSync } from "child_process";
@@ -20,10 +21,10 @@ const client = new OpenAI({
   baseURL: "https://api.groq.com/openai/v1",
 });
 
-const LOCAL_SAVE_PATH = "./outputs";
+const LOCAL_SAVE_PATH = "./outputs/";
 if (!fs.existsSync(LOCAL_SAVE_PATH)) fs.mkdirSync(LOCAL_SAVE_PATH, { recursive: true });
 
-const SAVE_PATH_DOCKER = "/app/backend/data/uploads/ai_model_news";
+const SAVE_PATH_DOCKER = "/app/backend/data/uploads/ai_models_news";
 
 async function scrapeAndSave() {
   console.log("🕸️ Fetching trending AI models from Hugging Face via Firecrawl...");
@@ -40,11 +41,11 @@ async function scrapeAndSave() {
   }
 
   // Step 2 — Summarize with Groq
-  console.log("🧠 Summarizing scraped content using Groq (GPT-OSS-120B)...");
+  console.log("🧠 Summarizing scraped content using Groq (GPT-OSS-20B)...");
   let summary = "";
   try {
     const response = await client.responses.create({
-      model: "openai/gpt-oss-120b",
+      model: "openai/gpt-oss-20b",
       input: `Summarize the most recently trending AI models from the following scraped content:\n${scrapedText.substring(0, 5000)}`
     });
     summary = response.output_text || JSON.stringify(response, null, 2);
