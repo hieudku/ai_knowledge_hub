@@ -1,6 +1,7 @@
 {
   "name": "ai_knowledge_hub",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +14,11 @@
     "@mendable/firecrawl-js": "^1.21.1",
     "axios": "^1.12.2",
     "cheerio": "^1.1.2",
+    "dotenv": "^17.2.3",
+    "fast-xml-parser": "^5.3.0",
     "firecrawl": "^1.21.1",
-    "openai": "^6.5.0"
+    "node-cron": "^4.2.1",
+    "openai": "^6.5.0",
+    "puppeteer": "^24.25.0"
   }
 }

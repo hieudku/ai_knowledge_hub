@@ -32,3 +32,7 @@ volumes:
   - ollama:/root/.ollama
   - openwebui_data:/app/backend/data
   - C:/Users/hieuc/ai_knowledge_hub/outputs:/app/backend/data/uploads/mounted-scrapping
+  - C:/Users/hieuc/ai_knowledge_hub/outputs/reddit_ai:/app/backend/data/uploads/reddit_ai
+  - C:/Users/hieuc/ai_knowledge_hub/outputs/ai_models_news:/app/backend/data/uploads/ai_models_news
+  - C:/Users/hieuc/ai_knowledge_hub/outputs/finance_news:/app/backend/data/uploads/finance_news
+  - C:/Users/hieuc/ai_knowledge_hub/outputs/job_market_news:/app/backend/data/uploads/job_market_news

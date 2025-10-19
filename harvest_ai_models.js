@@ -23,7 +23,7 @@ const client = new OpenAI({
 const LOCAL_SAVE_PATH = "./outputs";
 if (!fs.existsSync(LOCAL_SAVE_PATH)) fs.mkdirSync(LOCAL_SAVE_PATH, { recursive: true });
 
-const SAVE_PATH_DOCKER = "/app/backend/data/uploads/ai_models";
+const SAVE_PATH_DOCKER = "/app/backend/data/uploads/ai_model_news";
 
 async function scrapeAndSave() {
   console.log("🕸️ Fetching trending AI models from Hugging Face via Firecrawl...");
