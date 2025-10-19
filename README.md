@@ -1,8 +1,9 @@
 # AI Knowledge Hub
 
-AI Knowledge Hub is a local and cloud-integrated automation environment that combines **OpenWebUI**, **Groq**, **Firecrawl**, and **Ollama** for intelligent data scraping, knowledge management, and AI-assisted analysis.  
+AI Knowledge Hub is a local and cloud-integrated automation environment that combines **OpenWebUI**, **Groq**, **Firecrawl**, and **Ollama** for intelligent data scraping, knowledge management, and AI-assisted automation.
 
-It automates the process of gathering AI-related data (such as trending models or discussions), summarizes it using advanced large language models, and makes the information directly available inside OpenWebUI for retrieval, analysis, or further context-based chat interactions.
+This project leverages the **Model Context Protocol (MCP)** framework to enable AI models to directly interact with external tools and APIs.  
+Through Groq’s MCP-compatible Responses API and Firecrawl’s MCP server, it automates the retrieval, summarization, and organization of AI-related data into a synchronized knowledge base accessible through OpenWebUI.
 
 ---
 
@@ -64,7 +65,7 @@ ai_knowledge_hub/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<yourusername>/ai-knowledge-hub.git
+git clone https://github.com/hieudku/ai-knowledge-hub.git
 cd ai-knowledge-hub
 ```
 
@@ -84,7 +85,7 @@ Then open `.env` and insert your actual keys:
 GROQ_API_KEY=your_groq_api_key_here
 FIRECRAWL_API_KEY=your_firecrawl_api_key_here
 OLLAMA_API_BASE_URL=http://host.docker.internal:11434
-DEFAULT_MODEL=gemma3:4b
+DEFAULT_MODEL=choose_your_own_local_model
 ENABLE_MCP_SERVERS=true
 NVIDIA_VISIBLE_DEVICES=all
 NVIDIA_DRIVER_CAPABILITIES=compute,utility
