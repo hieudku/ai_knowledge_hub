@@ -1,0 +1,19 @@
+{
+  "name": "ai_knowledge_hub",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@mendable/firecrawl-js": "^1.21.1",
+    "axios": "^1.12.2",
+    "cheerio": "^1.1.2",
+    "firecrawl": "^1.21.1",
+    "openai": "^6.5.0"
+  }
+}

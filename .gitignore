@@ -1,0 +1,25 @@
+# Node
+node_modules/
+package-lock.json
+
+# Local build + cache
+__pycache__/
+*.log
+*.sqlite
+*.db
+
+# Docker / system
+.dockerenv
+webui_secret_key
+.env
+open_webui_data/
+ollama/
+vector_db/
+uploads/
+cache/
+outputs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
