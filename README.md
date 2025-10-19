@@ -26,6 +26,7 @@ This setup is ideal for research, AI knowledge aggregation, and experimentation 
 - **Automated Data Scraping**
   - `harvest_ai_models.js`: Scrapes trending AI models from Hugging Face.
   - `harvest_reddit_ai.js`: Scrapes AI-related subreddit discussions.
+  - `harvest_investor_news_firecrawl.js`: Scrapes finance & investment news and market sentiments.
 - **Persistent Output Management**
   - Organized directories under `/outputs` for each data source.
   - Optional live mount to OpenWebUI’s `/uploads` folder for automatic sync.
