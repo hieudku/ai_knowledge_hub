@@ -26,6 +26,7 @@ This setup is ideal for research, AI knowledge aggregation, and experimentation 
 - **Automated Data Scraping**
   - `harvest_ai_models.js`: Scrapes trending AI models from Hugging Face.
   - `harvest_reddit_ai.js`: Scrapes AI-related subreddit discussions.
+  - `harvest_investor_news_firecrawl.js`: Scrapes finance & investment news and market sentiments.
 - **Persistent Output Management**
   - Organized directories under `/outputs` for each data source.
   - Optional live mount to OpenWebUI’s `/uploads` folder for automatic sync.
@@ -38,6 +39,10 @@ This setup is ideal for research, AI knowledge aggregation, and experimentation 
   - Single `docker-compose.yml` handles build, run, and persistence.
 - **Safe Configuration**
   - `.env` file manages API keys and model configuration.
+
+## Showcase
+- Finance News Summary from [InvestorNe](https://www.investors.com/) - MCP webscrapping with groq GPT-OSS-120b & Firecrawl, summarized by Llama3.3-70b base model locally with knowledge/system prompts
+- ![](./resources/img/finance_news_daily_scrap.jpg).
 
 ---
 
