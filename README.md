@@ -40,7 +40,8 @@ This setup is ideal for research, AI knowledge aggregation, and experimentation 
   - `.env` file manages API keys and model configuration.
 
 ## Showcase
-- ![Finance News - MCP webscrapping with groq gpt-oss-120b & Firecrawl, summarized by Llama3.3-70b base model with knowledge/system prompts](./resources/img/finance_news_daily_scrap.jpg).
+- Finance News Summary from [InvestorNe](https://www.investors.com/) - MCP webscrapping with groq GPT-OSS-120b & Firecrawl, summarized by Llama3.3-70b base model locally with knowledge/system prompts
+- ![](./resources/img/finance_news_daily_scrap.jpg).
 
 ---
 
