@@ -42,8 +42,10 @@ This setup is ideal for research, AI knowledge aggregation, and experimentation 
 
 ## Showcase
 - Finance News Summary from [InvestorNe](https://www.investors.com/) - MCP webscrapping with groq GPT-OSS-120b & Firecrawl, summarized by Llama3.3-70b base model locally with knowledge/system prompts
-- ![](./resources/img/finance_news_daily_scrap.jpg).
+- ![](./resources/img/finance_news_daily_scrap.jpg)
 
+- Huggingface.co and AI & LLM Sub-reddit new posts summary and reasoning by customized Llama3.3-70b based AI Researcher model.
+- ![](./resources/img/researcher_huggingface_redditai.jpg)
 ---
 
 ## Directory Structure
