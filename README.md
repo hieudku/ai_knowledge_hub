@@ -46,6 +46,12 @@ This setup is ideal for research, AI knowledge aggregation, and experimentation 
 
 - Huggingface.co and AI & LLM Sub-reddit new posts summary and reasoning by customized Llama3.3-70b based AI Researcher model.
 - ![](./resources/img/researcher_huggingface_redditai.jpg)
+
+  
+- MCP prompt -> scrape -> summarize automation in action
+- ![](./resources/img/bash.jpg)
+
+
 ---
 
 ## Directory Structure
